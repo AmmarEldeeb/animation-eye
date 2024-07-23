@@ -1,0 +1,46 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .eye {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50% 50% 0 0;
+    margin: 0 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .pupil {
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease;
+  }
+  
+  .eye:hover .pupil {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
